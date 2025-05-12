@@ -51,6 +51,9 @@ class MainActivity : AppCompatActivity() {
         val btnIgual = findViewById<Button>(R.id.btnIgual)
         val resUser = findViewById<TextView>(R.id.resUser)
 
+        val btnC = findViewById<Button>(R.id.btnC)
+        val btnClear = findViewById<Button>(R.id.btnDelete)
+
         // ------------------------------------------------
         // Botões avançados ---------------------------------
         // ------------------------------------------------
@@ -257,6 +260,17 @@ class MainActivity : AppCompatActivity() {
             }else
             {
                 edtUser.setText(edtUser.text.toString()+")")
+            }
+        })
+
+        btnC.setOnClickListener({
+            edtUser.setText("")
+            resUser.setText("")
+        })
+
+        btnC.setOnClickListener({
+            if (edtUser.text.toString() != "" || edtUser.text.toString() != "0") {
+                edtUser.setText(edtUser.toString().dropLast(1))
             }
         })
 
