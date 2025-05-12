@@ -53,4 +53,4 @@ public class MainActivity extends AppCompatActivity {
 
 ## Imagens
 
-![Captura de tela](Captura%20de%20Tela%20(1).png)
+![Captura de tela](CapturadeTela.png)
